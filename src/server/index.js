@@ -15,7 +15,7 @@ app.use(express.static('public'));
 
 app.get('*', (req, res, next) => {
   const markup = renderToString(
-    <App />
+    <App data="Wouter" />
   );
 
   res.send(`
